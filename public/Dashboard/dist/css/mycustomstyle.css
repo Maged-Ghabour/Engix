@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "cairo";
+    src: url("../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf");
+
+}
+
+
+body{
+    font-family: "cairo" !important;
+}
+
+.width30{
+    width:30%;
+}
+.float_right{
+    float:  right !important;
+}
+.custom_img{
+    width:150px;
+    height: 150px;
+}
+.card_title_center{
+    width: 100%;
+    text-align: center !important;
+}
+.main-sidebar {
+
+    width: 250px ;
+}
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+
+}
+.page-item.active .page-link{
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+
+.page-link{
+    color: #17a2b8;
+}
+

@@ -1,0 +1,24 @@
+@extends('Front.layouts.app')
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container p-5 col-6 bg-light">
+                    <form action="{{ route('profile.updateing', $user->id) }}" method="POST">
+                        @method('PUT')
+                        @csrf
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" name="email" value="{{ $user->email }}" class="form-control"
+                                id="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
